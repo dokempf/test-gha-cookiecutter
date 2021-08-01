@@ -58,7 +58,7 @@ class CMakeBuild(build_ext):
 
 setup(
     name='testgithubactionscookiecuttercppproject',
-    version='0.0.1',
+    version="0.0.68",
     author='Your Name',
     author_email='your@email.com',
     description='Add description here',

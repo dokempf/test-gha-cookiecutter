@@ -1,0 +1,3 @@
+pybind11_add_module(testgithubactionscookiecuttercppproject_python test-github-actions-cookiecutter-cpp-project_python.cpp)
+target_link_libraries(testgithubactionscookiecuttercppproject_python PUBLIC test-github-actions-cookiecutter-cpp-project)
+set_target_properties(testgithubactionscookiecuttercppproject_python PROPERTIES OUTPUT_NAME testgithubactionscookiecuttercppproject)

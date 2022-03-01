@@ -5,7 +5,7 @@ import pybind11
 
 setup(
     name='citest',
-    version='0.0.1',
+    version="0.0.73",
     author='Your Name',
     author_email='your@email.com',
     description='Add description here',

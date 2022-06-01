@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "scikit-build", "cmake>=3.9", "pybind11[global]==2.9.1"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests/python"]
+
+[tool.cibuildwheel]
+# The variables in this section allow you to customize the process how the wheels
+# for the Python packages are built. For a list of options, see this
+# page: https://cibuildwheel.readthedocs.io/en/stable/options/
+
+# Verbose output is helpful for understanding CI failures
+build-verbosity = 3
+
+# We restrict ourselves to recent Python versions
+skip = "pp* *p27-* cp35-* *musllinux*"
+
+# Testing commands for our wheels
+test-command = "pytest {package}/tests/python"
+test-requires = ["pytest"]

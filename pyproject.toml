@@ -16,7 +16,7 @@ build-backend = "setuptools.build_meta"
 # single source of truth for citest's version
 [project]
 name = "citest"
-version = "0.0.1"
+version = "0.0.78",
 description = "Add short description here"
 readme = "README.md"
 maintainers = [

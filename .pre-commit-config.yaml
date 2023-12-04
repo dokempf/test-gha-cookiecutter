@@ -1,13 +1,13 @@
 repos:
   # Run Black - the uncompromising Python code formatter
   - repo: https://github.com/psf/black
-    rev: 23.7.0
+    rev: 23.11.0
     hooks:
       - id: black-jupyter
 
   # Format C++ code with Clang-Format - automatically applying the changes
   - repo: https://github.com/pre-commit/mirrors-clang-format
-    rev: v16.0.6
+    rev: v17.0.6
     hooks:
       - id: clang-format
         args:
@@ -16,7 +16,7 @@ repos:
 
   # Add some general purpose useful hooks
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v4.5.0
     hooks:
       # Make sure that contained YAML files are well-formed
       - id: check-yaml

@@ -16,7 +16,7 @@ build-backend = "setuptools.build_meta"
 # single source of truth for testghacookiecutter's version
 [project]
 name = "testghacookiecutter"
-version = "0.0.1"
+version = "0.0.105"
 description = "Add short description here"
 readme = "README.md"
 maintainers = [

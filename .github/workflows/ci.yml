@@ -187,7 +187,7 @@ jobs:
         lcov --directory ./build --capture --output-file coverage.info
 
     - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
+      uses: codecov/codecov-action@v5
       with:
         fail_ci_if_error: true
         files: ${{github.workspace}}/coverage.info

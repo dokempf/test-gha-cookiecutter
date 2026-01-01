@@ -13,7 +13,7 @@ build-backend = "scikit_build_core.build"
 # single source of truth for testghacookiecutter's version
 [project]
 name = "testghacookiecutter"
-version = "0.0.1"
+version = "0.0.119"
 description = "Add short description here"
 readme = "README.md"
 maintainers = [
@@ -32,7 +32,7 @@ dependencies = []
 
 # The configuration for the scikit-build-core build process
 [tool.scikit-build]
-cmake.version = ">=3.9"
+cmake.version = "0.0.119"
 build.verbose = true
 
 [tool.scikit-build.cmake.define]

@@ -1,0 +1,30 @@
+variables:
+
+.base:
+  image: ubuntu:24.04
+
+  before_script:
+    - apt-get update
+    - apt-get install -y cmake git $COMPILER_PACKAGES
+    - apt-get install -y python3-dev
+    - apt-get install -y doxygen
+    - cmake --version
+    - $CXX --version
+  script:
+    - cmake --preset test
+    - cmake --build --preset test
+    - ctest --preset test
+
+build-and-test:gcc:
+  extends: .base
+  variables:
+    COMPILER_PACKAGES: "gcc-14 g++-14"
+    CC: gcc-14
+    CXX: g++-14
+
+build-and-test:clang:
+  extends: .base
+  variables:
+    COMPILER_PACKAGES: "clang-18"
+    CC: clang-18
+    CXX: clang++-18

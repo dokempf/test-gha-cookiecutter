@@ -56,7 +56,7 @@ jobs:
           print(f"Publishing from {ref}, matching project version {version}.")
 
       - name: Build wheels
-        uses: pypa/cibuildwheel@v4.2.1
+        uses: pypa/cibuildwheel@v4.3.5
 
       - uses: actions/upload-artifact@v7
         with:
